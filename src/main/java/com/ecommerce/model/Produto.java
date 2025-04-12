@@ -1,3 +1,5 @@
+package model;
+
 public class Produto {
     private String nome;
     private double preco;
@@ -59,7 +61,7 @@ public class Produto {
 }
 
 // Subclasses
-class Livros extends Produto {
+public class Livros extends Produto {
     private String autor;
     private String editora;
 
@@ -92,7 +94,7 @@ class Livros extends Produto {
     }
 }
 
-class Eletronicos extends Produto {
+public class Eletronicos extends Produto {
     private String marca;
     private String garantia;
 
@@ -125,7 +127,7 @@ class Eletronicos extends Produto {
     }
 }
 
-class Roupas extends Produto {
+public class Roupas extends Produto {
     private String tamanho;
     private String cor;
 

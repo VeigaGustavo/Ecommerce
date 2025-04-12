@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,15 +55,15 @@ public class Cliente {
             return;
         }
 
-        System.out.println("Histórico de Pedidos do Cliente " + nome + ":");
+        System.out.println("Histórico de Pedidos do model.Cliente " + nome + ":");
         for (Pedido pedido : historicoPedidos) {
-            System.out.println(pedido);  // Supondo que Pedido tenha um toString() bem definido
+            System.out.println(pedido);  // Supondo que model.Pedido tenha um toString() bem definido
         }
     }
 
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "model.Cliente{" +
                 "nome='" + nome + '\'' +
                 ", endereco='" + endereco + '\'' +
                 ", email='" + email + '\'' +

@@ -1,8 +1,8 @@
-import exceptions.PedidoVazioException;
+package model;
+
 import exceptions.ProdutoJaExisteNoCarrinhoException;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Carrinho {
@@ -16,7 +16,7 @@ public class Carrinho {
 
     public void adicionarProduto(Produto produto) throws ProdutoJaExisteNoCarrinhoException {
         if (itens.containsKey(produto)) {
-            throw new ProdutoJaExisteNoCarrinhoException("Produto já existe no carrinho");
+            throw new ProdutoJaExisteNoCarrinhoException("model.Produto já existe no carrinho");
         }
         itens.put(produto, 1);
     }

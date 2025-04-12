@@ -1,3 +1,5 @@
+package model;
+
 import exceptions.PedidoVazioException;
         import java.util.HashMap;
         import java.util.Map;
@@ -11,7 +13,7 @@ import exceptions.PedidoVazioException;
 
             public Pedido(Carrinho carrinho) throws PedidoVazioException {
                 if (carrinho.getItens().isEmpty()) {
-                    throw new PedidoVazioException("Pedido vazio");
+                    throw new PedidoVazioException("model.Pedido vazio");
                 }
 
                 this.id = contador++;
